@@ -12,6 +12,7 @@
       --muted: #a1a1aa;
       --accent: #0a84ff;
       --radius: 20px;
+      --bold-color: #ff8c00;
     }
     * { box-sizing: border-box; }
     body {
@@ -22,11 +23,15 @@
       line-height: 1.6;
       scroll-behavior: smooth;
     }
+    b {
+      color: var(--bold-color);
+      font-weight: 600;
+    }
     /* --- Layout helpers --- */
     .wrapper { max-width: 1000px; margin: 0 auto; padding: 0 1rem; }
     nav {
       position: sticky; top: 0; z-index: 999;
-      display: flex; align-items:center; gap: 1rem; overflow-x: auto;
+      display: flex; gap: 1rem; overflow-x: auto;
       background: rgba(0,0,0,0.8); backdrop-filter: blur(8px);
       padding: 0.75rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.05);
     }
@@ -35,7 +40,7 @@
       transition: color .25s;
     }
     nav a:hover, nav a:focus { color: var(--accent); }
-    nav img.logo { height: 34px; margin-right: .75rem; flex-shrink: 0; filter: drop-shadow(0 2px 3px rgba(0,0,0,.4)); }
+    nav img.logo { height: 25px; margin-right: .75rem; flex-shrink: 0; filter: drop-shadow(0 2px 3px rgba(0,0,0,.4)); }
 
     /* --- Hero --- */
     .hero {
@@ -44,6 +49,18 @@
     }
     .hero h1 { font-size: clamp(2.6rem, 6vw, 5rem); margin: 0 0 1rem; font-weight: 600; }
     .hero p { font-size: 1.2rem; max-width: 60ch; opacity: .9; margin: 0 auto; }
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .logo-container img.logo {
+      height: 40px;
+      width: auto;
+      object-fit: contain;
+    }
     .cta-btn {
       margin-top: 2rem; display: inline-block; padding: .8rem 2rem; border-radius: 9999px;
       color: var(--accent); border: 1px solid var(--accent); text-decoration: none; font-weight: 500;
@@ -96,14 +113,20 @@
 <body>
 
 <header class="hero">
+  <img src="qumodity.png" alt="Qumodity logo" class="logo" /><br>
   <h1>Modernizing the Perimeter in Azure</h1>
-  <p>A strategic transition from appliance‑centric firewalls to a cloud‑native, zero‑trust design—powered by Palo Alto and Zscaler.</p>
+  <p>A strategic transition from appliance‑centric firewalls to a cloud‑native, zero‑trust design—powered by <b>Cloud for NGFW</b> by Palo Alto Networks and <b>Zscaler</b>.</p>
+  <div class="logo-container">
+    <img src="panw.png" alt="Palo Alto Networks logo" class="logo" />
+    <img src="zscaler.png" alt="Zscaler logo" class="logo" />
+    <img src="azure.png" alt="Azure logo" class="logo" />
+  </div>
   <a href="#exec" class="cta-btn">Explore the Strategy</a>
 </header>
 
 <nav>
   <img src="qumodity.png" alt="Qumodity logo" class="logo" />
-  <a href="#exec">Zero‑Trust, Zero Stress</a>
+  <a href="#exec">Zero-Turst, Zero Stress</a>
   <a href="#practices">Best Practices</a>
   <a href="#ideas">Key Ideas</a>
   <a href="#layers">Layered Security</a>
@@ -114,13 +137,146 @@
   <a href="#steps">Next Steps</a>
 </nav>
 
-<!-- content truncated for brevity in this snippet -->
 <main class="wrapper">
-<p style="color:var(--muted);text-align:center;padding:2rem">[Page content continues here…]</p>
+  <!-- Zero-Trust, Zero Stress -->
+  <section id="exec" class="reveal">
+    <h2>Zero-Trust, Zero Stress</h2>
+    <p class="lead">Current Azure environments still behave like an on‑prem data center. Change tickets stack up, security gaps hide in plain sight, and every outbound packet pays a toll in egress fees. <strong>Cloud‑native services</strong> close those gaps without adding hardware or headcount.</p>
+    <div class="card-grid">
+      <article class="card">
+        <h3>Agility Without Tickets</h3>
+        <p>Policy‑as‑code plugs straight into CI/CD, so developers get changes in minutes, not days—and every rule is peer‑reviewed in Git.</p>
+      </article>
+      <article class="card">
+        <h3>Zero‑Trust by Design</h3>
+        <p>Zscaler removes the need for public IPs, while Palo Alto Cloud NGFW inspects east‑west traffic inside Azure Virtual WAN.</p>
+      </article>
+      <article class="card">
+        <h3>Cost &amp; Complexity Down</h3>
+        <p>Managed cloud firewalls replace self‑hosted appliances, cutting both licence spend and double egress charges—up to 78 % in our forecast.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 2. Best Practices -->
+  <section id="practices" class="reveal">
+    <h2>Azure Security Best Practices at the Core</h2>
+    <div class="card-grid">
+      <article class="card">
+        <h3>Identity&nbsp;&amp;&nbsp;Access</h3>
+        <p><b>MFA</b> and <b>Conditional Access</b> for every user, with <b>Privileged Identity Management</b> safeguarding admin roles. Service principals become <b>Managed Identities</b>.</p>
+      </article>
+      <article class="card">
+        <h3>Network</h3>
+        <p><b>Hub‑and‑spoke</b> or <b>Virtual WAN</b> for central control, default‑deny NSGs at every layer, and <b>Private Endpoints</b> to keep PaaS traffic off the public internet.</p>
+      </article>
+      <article class="card">
+        <h3>Data Protection</h3>
+        <p><b>Transparent encryption</b> at rest, <b>secrets</b> in Key Vault, and <b>Purview‑driven classification</b> feeding DLP policies.</p>
+      </article>
+      <article class="card">
+        <h3>Monitoring&nbsp;&amp;&nbsp;Response</h3>
+        <p><b>Defender for Cloud</b> surfaces misconfigurations, <b>Log Analytics</b> aggregates telemetry, and <b>Sentinel</b> automates triage with Logic Apps.</p>
+      </article>
+      <article class="card">
+        <h3>Governance</h3>
+        <p><b>Azure Policy</b>, <b>Blueprints</b>, and secure tagging frameworks enforce guardrails and track compliance posture via <b>Secure Score</b>.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 3. Key ideas -->
+  <section id="ideas" class="reveal">
+    <h2>Key Ideas—At a Glance</h2>
+    <div class="card-grid">
+      <article class="card"><h3>Secure‑by‑Design</h3><p>CISA's call for products that ship hardened, reducing the need for bolt‑on fixes later.</p></article>
+      <article class="card"><h3>Zero Trust</h3><p>Every user, device, and segment must prove itself. Trust is earned per request—not inherited.</p></article>
+      <article class="card"><h3>Azure Virtual WAN</h3><p>Microsoft's cloud backbone automatically connects VNets and sites across the globe.</p></article>
+      <article class="card"><h3>Zscaler Exchange</h3><p>Cloud platform that inspects internet traffic and brokers private‑app access—no inbound ports exposed.</p></article>
+      <article class="card"><h3>Palo Alto Cloud NGFW</h3><p>Next‑generation firewall delivered as a service and dropped directly into the vWAN hub.</p></article>
+    </div>
+  </section>
+
+  <!-- 4. Layered Security Approach -->
+  <section id="layers" class="reveal">
+    <h2>Layered Security</h2>
+    <p class="lead">Think of security like concentric rings—if one control fails, the next contains the blast radius.</p>
+    <div class="card-grid">
+      <article class="card"><h3>Identity</h3><p><b>Conditional Access</b> + ZPA verify user and device posture before access is granted.</p></article>
+      <article class="card"><h3>Edge</h3><p><b>Zscaler Internet Access</b> inspects and encrypts outbound traffic at the nearest POP.</p></article>
+      <article class="card"><h3>Workload</h3><p><b>Cloud NGFW</b> and <b>Zscaler Cloud Connector</b> inspect east‑west traffic and apply threat prevention.</p></article>
+      <article class="card"><h3>Data</h3><p><b>Purview</b> labels sensitive content, while inline DLP in <b>Zscaler</b> stops exfiltration.</p></article>
+      <article class="card"><h3>Monitoring</h3><p>Unified logging feeds <b>Sentinel</b>, <b>ZDX</b>, and <b>Strata Cloud Manager</b> for rapid response.</p></article>
+    </div>
+  </section>
+
+  <!-- 5. Future model -->
+  <section id="model" class="reveal">
+    <h2>Future‑State Model</h2>
+    <div class="timeline">
+      <div class="timeline-step">
+        <h4>Secure Internet</h4>
+        <p>Branches and users tunnel to the closest <b>Zscaler POP</b>, where SSL inspection and threat intel occur at cloud scale.</p>
+      </div>
+      <div class="timeline-step">
+        <h4>Private Apps</h4>
+        <p>No servers sit on public IPs. <b>Zscaler ZPA</b> brokers identity‑based connectivity through app connectors.</p>
+      </div>
+      <div class="timeline-step">
+        <h4>Azure Egress</h4>
+        <p>Workloads route outbound through a <b>Zscaler Cloud Connector</b> scale set, maintaining policy parity with users.</p>
+      </div>
+      <div class="timeline-step">
+        <h4>East‑West Security</h4>
+        <p>vWAN steers lateral traffic through <b>Palo Alto Cloud NGFW</b> for deep packet inspection and segmentation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Benefits -->
+  <section id="benefits" class="reveal">
+    <h2>Strategic Business Benefits</h2>
+    <div class="card-grid">
+      <article class="card"><h3>Lower Risk</h3><p>No inbound IPs to scan, and <b>Conditional Access</b> enforces least privilege everywhere.</p></article>
+      <article class="card"><h3>Faster Change</h3><p>New VNets or branches inherit security instantly; policies update via <b>Git</b> in minutes.</p></article>
+      <article class="card"><h3>Reduced Cost</h3><p>Forecast shows $473 k annual savings replacing 20 <b>Palo Alto NetworksVM‑Series</b> appliances.</p></article>
+      <article class="card"><h3>Audit Ready</h3><p>Declarative policies with full commit history satisfy regulators and security teams alike.</p></article>
+    </div>
+  </section>
+
+  <!-- 7. Flaws & Fixes -->
+  <section id="flaws" class="reveal">
+    <h2>Legacy Flaws ↔ Cloud‑First Fixes</h2>
+    <div class="card-grid">
+      <article class="card"><h3>Static UDRs</h3><p>Replaced by routing intent within <b>Virtual WAN</b>—no manual drift.</p></article>
+      <article class="card"><h3>Public IPs on VMs</h3><p>Zscaler ZPA publishes apps via private DNS, eliminating exposure.</p></article>
+      <article class="card"><h3>Shared Hub Firewalls</h3><p>Isolated <b>Virtual WAN</b> hubs separate Prod, Dev, and Test blast radii.</p></article>
+      <article class="card"><h3>GUI‑Only Changes</h3><p>Policies now defined in <b>Terraform</b> modules—peer‑reviewed and version‑controlled.</p></article>
+    </div>
+  </section>
+
+  <!-- 8. Cost -->
+  <section id="cost" class="reveal">
+    <h2>Cost &amp; Savings Snapshot</h2>
+    <p class="lead">From one to thousands of security appliance VM replacements, managed solutions consistently cut spend by over half—while freeing engineers from patch cycles.</p>
+  </section>
+
+  <!-- 9. Next steps -->
+  <section id="steps" class="reveal">
+    <h2>Next Steps</h2>
+    <div class="timeline">
+      <div class="timeline-step"><h4>Board Approval</h4><p>Let <b>Qumodity</b> assist in securing executive endorsement of the target zero‑trust end state. We provide the strategic direction, business case, and technical due diligence. World class architects and engineers provide the expertise to guide you through the transition.</p></div>
+      <div class="timeline-step"><h4>Pilot Launch</h4><p>We provide holistic project support, including architecture, design, and implementation. We deploy ZIA, ZPA, and Cloud NGFW in a non‑production hub to validate the strategy.</p></div>
+      <div class="timeline-step"><h4>Tooling & Training</h4><p>We provide in house professional services to stand up policy‑as‑code pipelines and upskill the platform team. Let us take care of the security policy management, process, and documentation for your entire organization.</p></div>
+      <div class="timeline-step"><h4>Phased Rollout</h4><p>Our solutions work because we collaborate with the business. Migrate either user traffic (risk) or workload traffic (cost) first based on your risk appetite, then iterate. We use industry standard tools and processes to ensure a smooth transition.</p></div>
+      <div class="timeline-step"><h4>Operational Excellence</h4><p><b>Qumodity</b> takes care of the day‑to‑day operations of your security platform. We manage the firewalls, the Zscaler Cloud Connectors, and the Azure Virtual WAN. You focus on your business while we find the right people to support you through professional services or FTE augmentation.</p></div>
+      <div class="timeline-step"><h4>Next Steps</h4><p>Let's talk. We're ready to help you modernize your perimeter in Azure.</p></div>
+    </div>
+  </section>
 </main>
 
 <footer>
-  © 2025 Qumodity — Modern Azure Security Strategy
+  © 2025 Qumodity — Modernizing the Perimeter in Azure
 </footer>
 
 <script>
