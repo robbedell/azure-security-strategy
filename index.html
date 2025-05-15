@@ -86,6 +86,15 @@
     .card:hover { transform: translateY(-6px); }
     .card h3 { margin-top: 0; font-size: 1.25rem; color: var(--accent); }
     .card p { margin: .75rem 0 0; font-size: .95rem; color: var(--text); }
+    .card img.thumbs {
+      height: 1.25rem;
+      width: auto;
+      vertical-align: middle;
+      margin-left: 0.5rem;
+    }
+    .card h3 img.thumbs {
+      margin-left: 0.5rem;
+    }
 
     /* --- Timeline --- */
     .timeline { position: relative; padding-left: 2rem; }
@@ -145,11 +154,11 @@
     <div class="card-grid">
       <article class="card">
         <h3>Agility Without Tickets</h3>
-        <p>Policy‑as‑code plugs straight into CI/CD, so developers get changes in minutes, not days—and every rule is peer‑reviewed in Git.</p>
+        <p><b>Policy‑as‑code</b> plugs straight into CI/CD, so developers get changes in minutes, not days—and every rule is peer‑reviewed in <b>Git</b>.</p>
       </article>
       <article class="card">
         <h3>Zero‑Trust by Design</h3>
-        <p>Zscaler removes the need for public IPs, while Palo Alto Cloud NGFW inspects east‑west traffic inside Azure Virtual WAN.</p>
+        <p><b>Zscaler</b> removes the need for public IPs, while <b>Palo Alto Cloud NGFW</b> inspects east‑west traffic inside <b>Azure Virtual WAN</b>.</p>
       </article>
       <article class="card">
         <h3>Cost &amp; Complexity Down</h3>
@@ -248,10 +257,10 @@
   <section id="flaws" class="reveal">
     <h2>Legacy Flaws ↔ Cloud‑First Fixes</h2>
     <div class="card-grid">
-      <article class="card"><h3>Static UDRs</h3><p>Replaced by routing intent within <b>Virtual WAN</b>—no manual drift.</p></article>
-      <article class="card"><h3>Public IPs on VMs</h3><p>Zscaler ZPA publishes apps via private DNS, eliminating exposure.</p></article>
-      <article class="card"><h3>Shared Hub Firewalls</h3><p>Isolated <b>Virtual WAN</b> hubs separate Prod, Dev, and Test blast radii.</p></article>
-      <article class="card"><h3>GUI‑Only Changes</h3><p>Policies now defined in <b>Terraform</b> modules—peer‑reviewed and version‑controlled.</p></article>
+      <article class="card"><h3>Public IPs on VMs<img src="no.png" alt="No" class="thumbs" /></h3><p><b>Zscaler ZPA</b> publishes apps via private DNS, eliminating exposure. <img src="yes.png" alt="Yes" class="thumbs" /></p></article>
+      <article class="card"><h3>Shared Hub Firewalls<img src="no.png" alt="No" class="thumbs" /></h3><p><b>Virtual WAN</b> hubs separate Prod, Dev, and Test blast radii. <img src="yes.png" alt="Yes" class="thumbs" /></p></article>
+      <article class="card"><h3>GUI‑Only Changes<img src="no.png" alt="No" class="thumbs" /></h3><p>Policies now defined in <b>Terraform</b> modules—peer‑reviewed and version‑controlled. <img src="yes.png" alt="Yes" class="thumbs" /></p></article>
+      <article class="card"><h3>Static UDRs<img src="no.png" alt="No" class="thumbs" /></h3><p>Replaced by routing intent within <b>Virtual WAN</b>—no manual drift. <img src="yes.png" alt="Yes" class="thumbs" /></p></article>
     </div>
   </section>
 
