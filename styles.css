@@ -88,6 +88,7 @@ nav img.logo {
   margin: 0 auto; 
 }
 
+/* --- Logo container --- */
 .logo-container {
   display: flex;
   justify-content: center;
@@ -102,6 +103,7 @@ nav img.logo {
   object-fit: contain;
 }
 
+/* --- CTA button --- */
 .cta-btn {
   margin-top: 2rem; 
   display: inline-block; 
@@ -226,7 +228,7 @@ section p.lead {
   .reveal { 
     opacity: 0; 
     transform: translateY(40px); 
-    transition: opacity .6s ease-out, transform .6s ease-out; 
+    transition: opacity .6s ease-in-out, transform .6s ease-in-out; 
   }
   .reveal.visible { 
     opacity: 1; 
