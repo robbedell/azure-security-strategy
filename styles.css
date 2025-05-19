@@ -390,4 +390,110 @@ footer {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Dropdown Menu Styles */
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+  /* margin-left: auto; Pushes dropdown to the right - apply specifically if needed */
+}
+
+.main-nav-dropdown {
+  margin-left: auto; /* Keep main menu to the right */
+}
+
+/* Styles for BOTH dropdown toggles */
+.nav-dropdown-toggle {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--accent);
+  padding: 4px 12px;
+  font-size: .9rem;
+  line-height: 1;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+
+.nav-dropdown-toggle:hover,
+.nav-dropdown-toggle.active {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.nav-dropdown-toggle .arrow {
+  margin-left: 8px;
+  font-size: 0.7rem;
+}
+
+/* Styles for BOTH dropdown menus */
+.nav-dropdown-menu {
+  display: none;
+  position: fixed;
+  background-color: var(--surface);
+  min-width: 250px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  z-index: 1000;
+  padding: 0.5rem 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.nav-dropdown-menu.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-dropdown-menu a {
+  color: var(--text);
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: .9rem;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-dropdown-menu a:hover {
+  background-color: var(--accent);
+  color: var(--bg);
+}
+
+/* Specific placement for Solutions dropdown if needed, otherwise it will be next to direct links */
+.solutions-nav-dropdown {
+  /* Add any specific margin or positioning if different from main-nav-dropdown */
+  /* For example, if you want it to the left of the main menu: margin-right: 0.5rem; */
+}
+
+/* Direct Navigation Links in Navbar */
+.direct-nav-links {
+  display: flex;
+  gap: 1rem; /* Spacing between links, same as nav's overall gap */
+  align-items: center;
+  overflow-x: auto; /* Allows scrolling if too many links */
+  opacity: 1; /* Initial opacity */
+  transition: opacity 0.15s ease-in-out; /* Matches JS timeout for fade */
+  flex-grow: 1; /* Allows it to take available space if needed */
+  min-width: 0; /* Important for flex children that might overflow */
+}
+
+.direct-nav-links a {
+  color: var(--muted); 
+  text-decoration: none; 
+  font-size: .9rem; 
+  white-space: nowrap;
+  transition: color .25s;
+}
+
+.direct-nav-links a:hover,
+.direct-nav-links a:focus {
+  color: var(--accent);
 } 
