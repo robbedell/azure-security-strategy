@@ -12,138 +12,170 @@
   <img src="qumodity.png" alt="Qumodity logo" class="logo" />
   <b>Security Center</b>
   <a href="#strategy">End-to-End Strategy</a>
-  <a href="#practices">Cloud Best Practices</a>
-  <a href="#ideas">Key Ideas</a>
-  <a href="#layers">Layered Security</a>
-  <a href="#model">Future Model</a>
-  <a href="#benefits">Benefits</a>
-  <a href="#flaws">Flaws & Fixes</a>
-  <a href="#cost">Cost Impact</a>
+  <a href="#readiness">Cloud Readiness</a>
+  <a href="#landing">Landing Zone</a>
+  <a href="#network">Network</a>
+  <a href="#security-arch">Security</a>
+  <a href="#modernization">Modernization</a>
   <a href="#steps">Next Steps</a>
 </nav>
 
 <main class="wrapper">
-  <!-- Zero-Trust, Zero Stress -->
+  <!-- Easy to Understand, Easy to Implement -->
   <section id="strategy" class="reveal">
-    <h2>Zero-Trust, Zero Stress</h2>
-    <p class="lead">Current Azure environments still behave like an on‑prem data center. Change tickets stack up, security gaps hide in plain sight, and every outbound packet pays a toll in egress fees. <strong>Cloud‑native services</strong> close those gaps without adding hardware or headcount.</p>
+    <h2>Easy to Understand, Easy to Implement</h2>
+    <p class="lead">Enable business agility, cost-effective security, and resilient digital infrastructure. Solutions are understood by the CIO, CISO, CTO, Cloud Architects, Security, and Compliance teams.</p>
     <div class="card-grid">
       <article class="card">
-        <h3>Agility Without Tickets</h3>
-        <p><b>Policy‑as‑code</b> plugs straight into CI/CD, so developers get changes in minutes, not days—and every rule is peer‑reviewed in <b>Git</b>.</p>
+        <h3>Business Alignment</h3>
+        <p>Align security with business goals, reduce risk, and enable agility.</p>
       </article>
       <article class="card">
-        <h3>Zero‑Trust by Design</h3>
-        <p><b>Zscaler</b> removes the need for public IPs, while <b>Palo Alto Cloud NGFW</b> inspects east‑west traffic inside <b>Azure Virtual WAN</b>.</p>
+        <h3>Secure Landing Zones</h3>
+        <p>Secure landing zones with zero-trust, zero-stress, and minimal risk.</p>
       </article>
       <article class="card">
-        <h3>Cost &amp; Complexity Down</h3>
-        <p>Managed cloud firewalls replace self‑hosted appliances, cutting both licence spend and double egress charges—up to 78 % in our forecast.</p>
+        <h3>Governance and Automation</h3>
+        <p>Governance and automation enable consistent, repeatable, and scalable security.</p>
+      </article>
+      <article class="card">
+        <h3>Scalable Network + Application Architecture</h3>
+        <p>Scalable network and application architecture with zero-trust, zero-stress, and minimal risk.</p>
+      </article>
+      <article class="card">
+        <h3>Hybrid / Cloud-Native Models  </h3>
+        <p>Hybrid / Cloud-Native models enable cost-effective security and resilient digital infrastructure.</p>
       </article>
     </div>
   </section>
 
-  <!-- 2. Best Practices -->
-  <section id="practices" class="reveal">
-    <h2>Cloud Best Practices</h2>
+  <!-- Cloud Readiness & Assessment -->
+  <section id="readiness" class="reveal">
+    <h2>Cloud Readiness & Assessment</h2>
     <div class="card-grid">
       <article class="card">
-        <h3>Identity&nbsp;&amp;&nbsp;Access</h3>
-        <p><b>MFA</b> and <b>Conditional Access</b> for every user, with <b>Privileged Identity Management</b> safeguarding admin roles. Service principals become <b>Managed Identities</b>.</p>
+        <h3>Stakeholder Interviews</h3>
+        <p>Comprehensive engagement with Business, IT, and Security teams to align objectives and requirements.</p>
       </article>
       <article class="card">
-        <h3>Network</h3>
-        <p><b>Hub‑and‑spoke</b> or <b>Virtual WAN</b> for central control, default‑deny NSGs at every layer, and <b>Private Endpoints</b> to keep PaaS traffic off the public internet.</p>
+        <h3>Inventory & Discovery</h3>
+        <p>Thorough mapping of applications, VMs, networks, and data flows to understand the current landscape.</p>
+      </article>
+      <article class="card">
+        <h3>Gap Analysis</h3>
+        <p>Detailed comparison of current on-premises capabilities versus cloud capabilities to identify opportunities.</p>
+      </article>
+      <article class="card">
+        <h3>TCO/ROI Modeling</h3>
+        <p>Comprehensive cost-benefit projections to support informed decision-making and investment planning.</p>
+      </article>
+      <article class="card">
+        <h3>Workload Prioritization</h3>
+        <p>Strategic classification of workloads based on criticality and complexity to guide migration planning.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Landing Zone Architecture -->
+  <section id="landing" class="reveal">
+    <h2>Landing Zone Architecture</h2>
+    <p class="lead">Create a secure, scalable foundation for your cloud journey with enterprise-grade architecture patterns.</p>
+    <div class="card-grid">
+      <article class="card">
+        <h3>Account/Subscription Structure</h3>
+        <p>Clear separation of Dev/Test/Prod environments with dedicated management groups and subscription hierarchies.</p>
+      </article>
+      <article class="card">
+        <h3>Identity & Access</h3>
+        <p>Comprehensive Azure AD integration with IAM roles, mandatory MFA, and Privileged Identity Management (PIM).</p>
+      </article>
+      <article class="card">
+        <h3>Networking Baseline</h3>
+        <p>Enterprise-grade networking with Hub-and-Spoke topology, Virtual WAN, and Private Link for secure connectivity.</p>
+      </article>
+      <article class="card">
+        <h3>Security & Compliance</h3>
+        <p>Policy as Code implementation with automated guardrails and continuous compliance monitoring.</p>
+      </article>
+      <article class="card">
+        <h3>Automation</h3>
+        <p>Infrastructure as Code using Terraform/Bicep/CloudFormation with automated CI/CD pipelines for consistent deployments.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Network Topology & Connectivity -->
+  <section id="network" class="reveal">
+    <h2>Network Topology & Connectivity</h2>
+    <div class="card-grid">
+      <article class="card">
+        <h3>Design Patterns</h3>
+        <p>Enterprise-grade patterns including Hub-and-Spoke, Virtual WAN, and Cloud-Native Firewalls (Palo Alto Cloud NGFW, Azure FW).</p>
+      </article>
+      <article class="card">
+        <h3>Routing</h3>
+        <p>Advanced routing with route tables, BGP, and strategic NVA placement for optimal traffic flow.</p>
+      </article>
+      <article class="card">
+        <h3>Hybrid Connectivity</h3>
+        <p>Seamless integration with VPN Gateway, ExpressRoute, and SD-WAN for reliable hybrid operations.</p>
+      </article>
+      <article class="card">
+        <h3>Secure Access</h3>
+        <p>Comprehensive security with Zscaler, Private Endpoints, and Bastion Hosts for protected access.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Security Architecture -->
+  <section id="security-arch" class="reveal">
+    <h2>Security Architecture</h2>
+    <p class="lead">Defense-in-Depth Approach: Multiple layers of security controls working together to protect your assets.</p>
+    <div class="card-grid">
+      <article class="card">
+        <h3>Perimeter</h3>
+        <p>Robust protection with NGFW, WAF, and DDoS Protection services.</p>
+      </article>
+      <article class="card">
+        <h3>Access Control</h3>
+        <p>Granular access management through RBAC, Conditional Access, and Privileged Identity Management.</p>
       </article>
       <article class="card">
         <h3>Data Protection</h3>
-        <p><b>Transparent encryption</b> at rest, <b>secrets</b> in Key Vault, and <b>Purview‑driven classification</b> feeding DLP policies.</p>
+        <p>Comprehensive data security with encryption in transit & at rest, Key Vault, and tokenization.</p>
       </article>
       <article class="card">
-        <h3>Monitoring&nbsp;&amp;&nbsp;Response</h3>
-        <p><b>Defender for Cloud</b> surfaces misconfigurations, <b>Log Analytics</b> aggregates telemetry, and <b>Sentinel</b> automates triage with Logic Apps.</p>
+        <h3>Workload Protection</h3>
+        <p>Advanced security with Defender for Cloud, Sentinel, XDR, and CSPM/CIEM solutions.</p>
       </article>
       <article class="card">
-        <h3>Governance</h3>
-        <p><b>Azure Policy</b>, <b>Blueprints</b>, and secure tagging frameworks enforce guardrails and track compliance posture via <b>Secure Score</b>.</p>
+        <h3>DevSecOps</h3>
+        <p>Integrated security with image scanning, pipeline enforcement, and IaC security practices.</p>
       </article>
     </div>
   </section>
 
-  <!-- 3. Key ideas -->
-  <section id="ideas" class="reveal">
-    <h2>Key Ideas—At a Glance</h2>
+  <!-- Application Modernization -->
+  <section id="modernization" class="reveal">
+    <h2>Application Modernization</h2>
     <div class="card-grid">
-      <article class="card"><h3>Secure‑by‑Design</h3><p>CISA's call for products that ship hardened, reducing the need for bolt‑on fixes later.</p></article>
-      <article class="card"><h3>Zero Trust</h3><p>Every user, device, and segment must prove itself. Trust is earned per request—not inherited.</p></article>
-      <article class="card"><h3>Azure Virtual WAN</h3><p>Microsoft's cloud backbone automatically connects VNets and sites across the globe.</p></article>
-      <article class="card"><h3>Zscaler Exchange</h3><p>Cloud platform that inspects internet traffic and brokers private‑app access—no inbound ports exposed.</p></article>
-      <article class="card"><h3>Palo Alto Cloud NGFW</h3><p>Next‑generation firewall delivered as a service and dropped directly into the vWAN hub.</p></article>
+      <article class="card">
+        <h3>App Patterns</h3>
+        <p>Modern application design with 12-factor apps, serverless architecture, and microservices patterns.</p>
+      </article>
+      <article class="card">
+        <h3>Containers</h3>
+        <p>Container orchestration using Azure Kubernetes Service (AKS), ECS, and GKE for scalable deployments.</p>
+      </article>
+      <article class="card">
+        <h3>DevOps Pipelines</h3>
+        <p>Automated CI/CD with GitHub Actions, Azure DevOps, and Jenkins for streamlined delivery.</p>
+      </article>
+      <article class="card">
+        <h3>API Management</h3>
+        <p>Secure and scalable API Gateway design with comprehensive security controls.</p>
+      </article>
     </div>
-  </section>
-
-  <!-- 4. Layered Security Approach -->
-  <section id="layers" class="reveal">
-    <h2>Layered Security</h2>
-    <p class="lead">Think of security like concentric rings—if one control fails, the next contains the blast radius.</p>
-    <div class="card-grid">
-      <article class="card"><h3>Identity</h3><p><b>Conditional Access</b> + ZPA verify user and device posture before access is granted.</p></article>
-      <article class="card"><h3>Edge</h3><p><b>Zscaler Internet Access</b> inspects and encrypts outbound traffic at the nearest POP.</p></article>
-      <article class="card"><h3>Workload</h3><p><b>Cloud NGFW</b> and <b>Zscaler Cloud Connector</b> inspect east‑west traffic and apply threat prevention.</p></article>
-      <article class="card"><h3>Data</h3><p><b>Purview</b> labels sensitive content, while inline DLP in <b>Zscaler</b> stops exfiltration.</p></article>
-      <article class="card"><h3>Monitoring</h3><p>Unified logging feeds <b>Sentinel</b>, <b>ZDX</b>, and <b>Strata Cloud Manager</b> for rapid response.</p></article>
-    </div>
-  </section>
-
-  <!-- 5. Future model -->
-  <section id="model" class="reveal">
-    <h2>Future‑State Model</h2>
-    <div class="timeline">
-      <div class="timeline-step">
-        <h4>Secure Internet</h4>
-        <p>Branches and users tunnel to the closest <b>Zscaler POP</b>, where SSL inspection and threat intel occur at cloud scale.</p>
-      </div>
-      <div class="timeline-step">
-        <h4>Private Apps</h4>
-        <p>No servers sit on public IPs. <b>Zscaler ZPA</b> brokers identity‑based connectivity through app connectors.</p>
-      </div>
-      <div class="timeline-step">
-        <h4>Azure Egress</h4>
-        <p>Workloads route outbound through a <b>Zscaler Cloud Connector</b> scale set, maintaining policy parity with users.</p>
-      </div>
-      <div class="timeline-step">
-        <h4>East‑West Security</h4>
-        <p>vWAN steers lateral traffic through <b>Palo Alto Cloud NGFW</b> for deep packet inspection and segmentation.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 6. Benefits -->
-  <section id="benefits" class="reveal">
-    <h2>Strategic Business Benefits</h2>
-    <div class="card-grid">
-      <article class="card"><h3>Lower Risk</h3><p>No inbound IPs to scan, and <b>Conditional Access</b> enforces least privilege everywhere.</p></article>
-      <article class="card"><h3>Faster Change</h3><p>New VNets or branches inherit security instantly; policies update via <b>Git</b> in minutes.</p></article>
-      <article class="card"><h3>Reduced Cost</h3><p>Forecast shows $473 k annual savings replacing 20 <b>Palo Alto NetworksVM‑Series</b> appliances.</p></article>
-      <article class="card"><h3>Audit Ready</h3><p>Declarative policies with full commit history satisfy regulators and security teams alike.</p></article>
-    </div>
-  </section>
-
-  <!-- 7. Flaws & Fixes -->
-  <section id="flaws" class="reveal">
-    <h2>Legacy Flaws ↔ Cloud‑First Fixes</h2>
-    <div class="card-grid">
-      <article class="card"><h3>Public IPs on VMs<img src="no.png" alt="No" class="thumbs" /></h3><p><b>Zscaler ZPA</b> publishes apps via private DNS, eliminating exposure. <img src="yes.png" alt="Yes" class="thumbs" /></p></article>
-      <article class="card"><h3>Shared Hub Firewalls<img src="no.png" alt="No" class="thumbs" /></h3><p><b>Virtual WAN</b> hubs separate Prod, Dev, and Test blast radii. <img src="yes.png" alt="Yes" class="thumbs" /></p></article>
-      <article class="card"><h3>GUI‑Only Changes<img src="no.png" alt="No" class="thumbs" /></h3><p>Policies now defined in <b>Terraform</b> modules—peer‑reviewed and version‑controlled. <img src="yes.png" alt="Yes" class="thumbs" /></p></article>
-      <article class="card"><h3>Static UDRs<img src="no.png" alt="No" class="thumbs" /></h3><p>Replaced by routing intent within <b>Virtual WAN</b>—no manual drift. <img src="yes.png" alt="Yes" class="thumbs" /></p></article>
-    </div>
-  </section>
-
-  <!-- 8. Cost -->
-  <section id="cost" class="reveal">
-    <h2>Cost &amp; Savings Snapshot</h2>
-    <p class="lead">From one to thousands of security appliance VM replacements, managed solutions consistently cut spend by over half—while freeing engineers from patch cycles.</p>
   </section>
 
   <!-- 9. Next steps -->
