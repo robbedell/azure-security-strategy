@@ -150,6 +150,17 @@ section p.lead {
   }
 }
 
+/* Add specific styles for layered cards in grid */
+.card-grid .layered-card {
+  grid-column: 1 / -1;  /* Make layered cards span full width */
+  max-width: 100%;
+}
+
+.card-grid .layered-card .layered-card__content {
+  max-width: 100%;
+}
+
+/* Keep original card styles */
 .card {
   background-color: var(--surface); 
   padding: 1.75rem; 
@@ -215,25 +226,41 @@ section p.lead {
   color: var(--accent);
 }
 
-.layered-card__subtitle {
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
-  color: var(--muted);
-}
-
-.layered-card__description {
-  margin: 1rem 0 0;
+.layered-card__content p {
+  margin: .75rem 0 0;
   font-size: .95rem;
   color: var(--text);
 }
 
-.layered-card__footer {
-  padding: 1rem 1.75rem;
-  background: rgba(0,0,0,0.2);
-  border-top: 1px solid rgba(255,255,255,0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.layered-card__content ul {
+  margin: .75rem 0 0;
+  font-size: .95rem;
+  color: var(--text);
+  padding-left: 1.5rem;
+}
+
+.layered-card__content li {
+  margin-bottom: 0.5rem;
+}
+
+.layered-card__content table {
+  width: 100%;
+  margin: .75rem 0 0;
+  font-size: .95rem;
+  color: var(--text);
+  border-collapse: collapse;
+}
+
+.layered-card__content th,
+.layered-card__content td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.layered-card__content th {
+  color: var(--accent);
+  font-weight: 600;
 }
 
 /* --- Timeline --- */

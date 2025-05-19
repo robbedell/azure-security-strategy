@@ -200,173 +200,164 @@
 
   <!-- Technical Content -->
   <div class="content-section" id="technical-content" style="display: none;">
-    <!-- Easy to Understand, Easy to Implement -->
-    <section id="strategy" class="reveal">
-      <h2>Technical Implementation Guide</h2>
-      <p class="lead">Comprehensive technical documentation and implementation details for Azure security architecture.</p>
+    <section class="reveal">
+      <h2>End-to-End Cloud Security Design Strategy</h2>
+      <p class="lead">For Secure, Compliant, and Resilient Azure Architecture with Palo Alto and Zscaler Integration</p>
       <div class="card-grid">
-        <article class="card">
-          <h3>Architecture Patterns</h3>
-          <p>Detailed technical patterns for implementing zero-trust security in Azure.</p>
+        <article class="layered-card">
+          <div class="layered-card__content">
+            <h3 class="layered-card__title">Executive Summary</h3>
+            <ul>
+              <li><b>Purpose</b>: Establish a zero-trust, defense-in-depth security architecture leveraging Azure, Palo Alto Networks, and Zscaler.</li>
+              <li><b>Audience</b>: CISO, Security Architects, Cloud Governance, Risk & Compliance Teams</li>
+              <li><b>Security Goals</b>:
+                <ul>
+                  <li>✅ Prevent lateral movement with Azure Private Link and Zscaler Private Access</li>
+                  <li>✅ Secure identity with Azure AD and Conditional Access</li>
+                  <li>✅ Protect data with Azure Key Vault and Palo Alto Data Loss Prevention</li>
+                  <li>✅ Enable centralized visibility with Azure Sentinel and Zscaler Analytics</li>
+                  <li>✅ Enforce compliance with Azure Policy and Palo Alto Prisma Cloud</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </article>
-        <article class="card">
-          <h3>Infrastructure as Code</h3>
-          <p>Terraform/Bicep templates and deployment guides for secure landing zones.</p>
+        <article class="layered-card">
+          <div class="layered-card__content">
+            <h3 class="layered-card__title">Foundational Security Pillars</h3>
+            <table>
+              <thead>
+                <tr><th>Pillar</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><b>Zero Trust</b></td><td>Azure AD Conditional Access, Zscaler Private Access, Palo Alto Prisma Access</td></tr>
+                <tr><td><b>Least Privilege</b></td><td>Azure RBAC, Zscaler ZPA, Palo Alto Panorama</td></tr>
+                <tr><td><b>Defense in Depth</b></td><td>Azure Security Center, Zscaler Internet Access, Palo Alto Cloud NGFW</td></tr>
+                <tr><td><b>Segmentation</b></td><td>Azure Virtual Networks, Zscaler ZPA, Palo Alto VM-Series</td></tr>
+                <tr><td><b>Compliance First</b></td><td>Azure Policy, Zscaler Compliance, Palo Alto Prisma Cloud</td></tr>
+              </tbody>
+            </table>
+          </div>
         </article>
-        <article class="card">
-          <h3>Security Controls</h3>
-          <p>Technical implementation of security controls and compliance requirements.</p>
+        <article class="layered-card">
+          <div class="layered-card__content">
+            <h3 class="layered-card__title">Identity and Access Management (IAM)</h3>
+            <ul>
+              <li>Azure AD with <b>Conditional Access</b> and <b>Privileged Identity Management (PIM)</b></li>
+              <li>Zscaler <b>Private Access (ZPA)</b> for zero-trust application access</li>
+              <li>Palo Alto <b>Prisma Access</b> for secure remote access</li>
+              <li>Azure <b>RBAC</b> with custom roles and management groups</li>
+            </ul>
+          </div>
         </article>
-        <article class="card">
-          <h3>Network Architecture</h3>
-          <p>Detailed network topology and connectivity patterns for Azure environments.</p>
+        <article class="layered-card">
+          <div class="layered-card__content">
+            <h3 class="layered-card__title">Secure Network Architecture</h3>
+            <ul>
+              <li>Azure <b>Virtual WAN</b> with Palo Alto <b>Cloud NGFW</b> integration</li>
+              <li>Zscaler <b>Internet Access (ZIA)</b> for secure internet access</li>
+              <li>Azure <b>Private Link</b> and <b>Private Endpoints</b></li>
+              <li>Palo Alto <b>VM-Series</b> in Azure for advanced threat prevention</li>
+              <li>Zscaler <b>Cloud Connectors</b> for secure hybrid connectivity</li>
+            </ul>
+          </div>
         </article>
-        <article class="card">
-          <h3>Monitoring & Logging</h3>
-          <p>Technical setup for security monitoring, logging, and alerting in Azure.</p>
+        <article class="layered-card">
+          <div class="layered-card__content">
+            <h3 class="layered-card__title">Data Protection</h3>
+            <ul>
+              <li>Azure <b>Purview</b> for data classification and governance</li>
+              <li>Azure <b>Key Vault</b> for key and secret management</li>
+              <li>Palo Alto <b>Data Loss Prevention</b> for sensitive data protection</li>
+              <li>Zscaler <b>Cloud DLP</b> for data security in transit</li>
+            </ul>
+          </div>
+        </article>
+        <article class="layered-card">
+          <div class="layered-card__content">
+            <h3 class="layered-card__title">Secure Workload Deployment</h3>
+            <ul>
+              <li>Azure <b>Container Registry</b> with vulnerability scanning</li>
+              <li>Palo Alto <b>Prisma Cloud</b> for container security</li>
+              <li>Azure <b>Defender for Cloud</b> for workload protection</li>
+              <li>Zscaler <b>Workload Segmentation</b> for micro-segmentation</li>
+            </ul>
+          </div>
+        </article>
+        <article class="layered-card">
+          <div class="layered-card__content">
+            <h3 class="layered-card__title">Monitoring, Logging, and Threat Detection</h3>
+            <ul>
+              <li>Azure <b>Sentinel</b> for SIEM and SOAR</li>
+              <li>Palo Alto <b>Cortex XDR</b> for extended detection and response</li>
+              <li>Zscaler <b>Analytics</b> for cloud security insights</li>
+              <li>Azure <b>Monitor</b> for comprehensive logging</li>
+            </ul>
+          </div>
+        </article>
+        <article class="layered-card">
+          <div class="layered-card__content">
+            <h3 class="layered-card__title">Governance and Policy Enforcement</h3>
+            <ul>
+              <li>Azure <b>Policy</b> and <b>Blueprints</b></li>
+              <li>Palo Alto <b>Prisma Cloud</b> for cloud security posture management</li>
+              <li>Zscaler <b>Cloud Security Posture</b> for compliance monitoring</li>
+              <li>Azure <b>Security Center</b> for continuous security assessment</li>
+            </ul>
+          </div>
+        </article>
+        <article class="layered-card">
+          <div class="layered-card__content">
+            <h3 class="layered-card__title">Secure Remote Access and Endpoints</h3>
+            <ul>
+              <li>Azure <b>Virtual Desktop</b> for secure remote access</li>
+              <li>Zscaler <b>Private Access (ZPA)</b> for zero-trust application access</li>
+              <li>Palo Alto <b>GlobalProtect</b> for secure endpoint access</li>
+              <li>Azure <b>Defender for Endpoint</b> for endpoint protection</li>
+            </ul>
+          </div>
+        </article>
+        <article class="layered-card">
+          <div class="layered-card__content">
+            <h3 class="layered-card__title">Incident Response and Recovery</h3>
+            <ul>
+              <li>Azure <b>Sentinel</b> playbooks for automated response</li>
+              <li>Palo Alto <b>Cortex XSOAR</b> for security orchestration</li>
+              <li>Zscaler <b>Threat Intelligence</b> for proactive defense</li>
+              <li>Azure <b>Backup</b> and <b>Site Recovery</b> for disaster recovery</li>
+            </ul>
+          </div>
+        </article>
+        <article class="layered-card">
+          <div class="layered-card__content">
+            <h3 class="layered-card__title">Layered Security Model Diagram</h3>
+            <pre style="background: var(--surface); color: var(--text); border-radius: var(--radius); padding: 1rem; font-size: 1rem; margin: .75rem 0 0;">
+┌──────────────────────────────┐
+│    Azure Policy & Governance │
+├──────────────────────────────┤
+│    Azure Sentinel & XDR      │
+├──────────────────────────────┤
+│    Azure AD & Zscaler ZPA    │
+├──────────────────────────────┤
+│    Palo Alto Cloud NGFW      │
+├──────────────────────────────┤
+│    Azure Purview & DLP       │
+├──────────────────────────────┤
+│    Azure Defender & Prisma   │
+├──────────────────────────────┤
+│    Zscaler & GlobalProtect   │
+└──────────────────────────────┘
+            </pre>
+          </div>
         </article>
       </div>
-    </section>
-
-    <!-- Cloud Readiness & Assessment -->
-    <section id="readiness" class="reveal">
-      <h2>Technical Assessment</h2>
-      <div class="card-grid">
-        <article class="card">
-          <h3>Infrastructure Analysis</h3>
-          <p>Technical assessment of current infrastructure and migration requirements.</p>
-        </article>
-        <article class="card">
-          <h3>Security Baseline</h3>
-          <p>Technical evaluation of current security controls and gaps.</p>
-        </article>
-        <article class="card">
-          <h3>Performance Metrics</h3>
-          <p>Technical performance analysis and optimization recommendations.</p>
-        </article>
-        <article class="card">
-          <h3>Cost Analysis</h3>
-          <p>Detailed technical cost breakdown and optimization strategies.</p>
-        </article>
-        <article class="card">
-          <h3>Migration Planning</h3>
-          <p>Technical migration strategy and implementation roadmap.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Landing Zone Architecture -->
-    <section id="landing" class="reveal">
-      <h2>Technical Landing Zone</h2>
-      <p class="lead">Detailed technical implementation of secure landing zones in Azure.</p>
-      <div class="card-grid">
-        <article class="card">
-          <h3>Resource Organization</h3>
-          <p>Technical implementation of management groups and subscription structure.</p>
-        </article>
-        <article class="card">
-          <h3>Identity Architecture</h3>
-          <p>Technical setup of Azure AD and identity management solutions.</p>
-        </article>
-        <article class="card">
-          <h3>Network Implementation</h3>
-          <p>Technical configuration of hub-and-spoke and virtual WAN architecture.</p>
-        </article>
-        <article class="card">
-          <h3>Security Implementation</h3>
-          <p>Technical deployment of security controls and monitoring solutions.</p>
-        </article>
-        <article class="card">
-          <h3>Automation Framework</h3>
-          <p>Technical implementation of IaC and automation pipelines.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Network Topology & Connectivity -->
-    <section id="network" class="reveal">
-      <h2>Technical Network Design</h2>
-      <div class="card-grid">
-        <article class="card">
-          <h3>Network Architecture</h3>
-          <p>Technical implementation of network security and connectivity patterns.</p>
-        </article>
-        <article class="card">
-          <h3>Routing Configuration</h3>
-          <p>Technical setup of routing and network security groups.</p>
-        </article>
-        <article class="card">
-          <h3>Hybrid Connectivity</h3>
-          <p>Technical implementation of VPN and ExpressRoute solutions.</p>
-        </article>
-        <article class="card">
-          <h3>Security Implementation</h3>
-          <p>Technical deployment of network security controls and monitoring.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Security Architecture -->
-    <section id="security-arch" class="reveal">
-      <h2>Technical Security Implementation</h2>
-      <p class="lead">Detailed technical implementation of security controls and monitoring.</p>
-      <div class="card-grid">
-        <article class="card">
-          <h3>Perimeter Security</h3>
-          <p>Technical implementation of network security controls.</p>
-        </article>
-        <article class="card">
-          <h3>Access Management</h3>
-          <p>Technical setup of RBAC and access control solutions.</p>
-        </article>
-        <article class="card">
-          <h3>Data Protection</h3>
-          <p>Technical implementation of encryption and data security controls.</p>
-        </article>
-        <article class="card">
-          <h3>Security Monitoring</h3>
-          <p>Technical setup of security monitoring and alerting solutions.</p>
-        </article>
-        <article class="card">
-          <h3>DevSecOps Implementation</h3>
-          <p>Technical integration of security into development pipelines.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Application Modernization -->
-    <section id="modernization" class="reveal">
-      <h2>Technical Modernization</h2>
-      <div class="card-grid">
-        <article class="card">
-          <h3>Application Architecture</h3>
-          <p>Technical implementation of modern application patterns.</p>
-        </article>
-        <article class="card">
-          <h3>Container Implementation</h3>
-          <p>Technical setup of container orchestration and management.</p>
-        </article>
-        <article class="card">
-          <h3>Pipeline Implementation</h3>
-          <p>Technical setup of CI/CD pipelines and automation.</p>
-        </article>
-        <article class="card">
-          <h3>API Implementation</h3>
-          <p>Technical setup of API management and security controls.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Next Steps -->
-    <section id="steps" class="reveal">
-      <h2>Technical Next Steps</h2>
+      <h3 style="margin-top:3rem;">Next Steps</h3>
       <div class="timeline">
-        <div class="timeline-step"><h4>Technical Assessment</h4><p>Let <b>Qumodity</b> perform a detailed technical assessment of your current environment. We provide comprehensive technical documentation and implementation guides.</p></div>
-        <div class="timeline-step"><h4>Technical Pilot</h4><p>We provide technical implementation support, including architecture, design, and deployment. We deploy security controls in a non-production environment to validate the technical approach.</p></div>
-        <div class="timeline-step"><h4>Technical Setup</h4><p>We provide technical implementation services to set up security controls and monitoring solutions. We handle the technical implementation of security controls and monitoring solutions.</p></div>
-        <div class="timeline-step"><h4>Technical Migration</h4><p>Our technical solutions work because we implement them correctly. Migrate either user traffic or workload traffic first based on technical requirements, then iterate.</p></div>
-        <div class="timeline-step"><h4>Technical Operations</h4><p><b>Qumodity</b> provides technical support for your security platform. We manage the technical implementation of security controls and monitoring solutions.</p></div>
-        <div class="timeline-step"><h4>Next Steps</h4><p>Let's talk. We're ready to help you implement your security controls in Azure.</p></div>
+        <div class="timeline-step"><h4>Security Gap Assessment</h4><p>Evaluate current Azure, Palo Alto, and Zscaler implementations against best practices.</p></div>
+        <div class="timeline-step"><h4>Secure Landing Zone</h4><p>Deploy Azure landing zone with Palo Alto Cloud NGFW and Zscaler integration.</p></div>
+        <div class="timeline-step"><h4>Compliance Mapping</h4><p>Map Azure, Palo Alto, and Zscaler controls to regulatory frameworks.</p></div>
+        <div class="timeline-step"><h4>Automate Remediation</h4><p>Implement automated security with Azure Policy, Prisma Cloud, and Zscaler.</p></div>
+        <div class="timeline-step"><h4>Budget & Licensing</h4><p>Plan for Azure, Palo Alto, and Zscaler licensing and ongoing security investments.</p></div>
       </div>
     </section>
   </div>
