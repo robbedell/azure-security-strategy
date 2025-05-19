@@ -11,6 +11,10 @@
 <nav>
   <img src="qumodity.png" alt="Qumodity logo" class="logo" />
   <b>Security Center</b>
+  <div class="layout-switcher">
+    <button class="layout-btn active" data-layout="business">Business</button>
+    <button class="layout-btn" data-layout="technical">Technical</button>
+  </div>
   <a href="#strategy">End-to-End Strategy</a>
   <a href="#readiness">Cloud Readiness</a>
   <a href="#landing">Landing Zone</a>
@@ -21,175 +25,351 @@
 </nav>
 
 <main class="wrapper">
-  <!-- Easy to Understand, Easy to Implement -->
-  <section id="strategy" class="reveal">
-    <h2>Easy to Understand, Easy to Implement</h2>
-    <p class="lead">Enable business agility, cost-effective security, and resilient digital infrastructure. Solutions are understood by the CIO, CISO, CTO, Cloud Architects, Security, and Compliance teams.</p>
-    <div class="card-grid">
-      <article class="card">
-        <h3>Business Alignment</h3>
-        <p>Align security with business goals, reduce risk, and enable agility.</p>
-      </article>
-      <article class="card">
-        <h3>Secure Landing Zones</h3>
-        <p>Secure landing zones with zero-trust, zero-stress, and minimal risk.</p>
-      </article>
-      <article class="card">
-        <h3>Governance and Automation</h3>
-        <p>Governance and automation enable consistent, repeatable, and scalable security.</p>
-      </article>
-      <article class="card">
-        <h3>Scalable Network + Application Architecture</h3>
-        <p>Scalable network and application architecture with zero-trust, zero-stress, and minimal risk.</p>
-      </article>
-      <article class="card">
-        <h3>Hybrid / Cloud-Native Models  </h3>
-        <p>Hybrid / Cloud-Native models enable cost-effective security and resilient digital infrastructure.</p>
-      </article>
-    </div>
-  </section>
+  <!-- Business Content -->
+  <div class="content-section" id="business-content">
+    <!-- Easy to Understand, Easy to Implement -->
+    <section id="strategy" class="reveal">
+      <h2>Easy to Understand, Easy to Implement</h2>
+      <p class="lead">Enable business agility, cost-effective security, and resilient digital infrastructure. Solutions are understood by the CIO, CISO, CTO, Cloud Architects, Security, and Compliance teams.</p>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Business Alignment</h3>
+          <p>Align security with business goals, reduce risk, and enable agility.</p>
+        </article>
+        <article class="card">
+          <h3>Secure Landing Zones</h3>
+          <p>Secure landing zones with zero-trust, zero-stress, and minimal risk.</p>
+        </article>
+        <article class="card">
+          <h3>Governance and Automation</h3>
+          <p>Governance and automation enable consistent, repeatable, and scalable security.</p>
+        </article>
+        <article class="card">
+          <h3>Scalable Network + Application Architecture</h3>
+          <p>Scalable network and application architecture with zero-trust, zero-stress, and minimal risk.</p>
+        </article>
+        <article class="card">
+          <h3>Hybrid / Cloud-Native Models  </h3>
+          <p>Hybrid / Cloud-Native models enable cost-effective security and resilient digital infrastructure.</p>
+        </article>
+      </div>
+    </section>
 
-  <!-- Cloud Readiness & Assessment -->
-  <section id="readiness" class="reveal">
-    <h2>Cloud Readiness & Assessment</h2>
-    <div class="card-grid">
-      <article class="card">
-        <h3>Stakeholder Interviews</h3>
-        <p>Comprehensive engagement with Business, IT, and Security teams to align objectives and requirements.</p>
-      </article>
-      <article class="card">
-        <h3>Inventory & Discovery</h3>
-        <p>Thorough mapping of applications, VMs, networks, and data flows to understand the current landscape.</p>
-      </article>
-      <article class="card">
-        <h3>Gap Analysis</h3>
-        <p>Detailed comparison of current on-premises capabilities versus cloud capabilities to identify opportunities.</p>
-      </article>
-      <article class="card">
-        <h3>TCO/ROI Modeling</h3>
-        <p>Comprehensive cost-benefit projections to support informed decision-making and investment planning.</p>
-      </article>
-      <article class="card">
-        <h3>Workload Prioritization</h3>
-        <p>Strategic classification of workloads based on criticality and complexity to guide migration planning.</p>
-      </article>
-    </div>
-  </section>
+    <!-- Cloud Readiness & Assessment -->
+    <section id="readiness" class="reveal">
+      <h2>Cloud Readiness & Assessment</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Stakeholder Interviews</h3>
+          <p>Comprehensive engagement with Business, IT, and Security teams to align objectives and requirements.</p>
+        </article>
+        <article class="card">
+          <h3>Inventory & Discovery</h3>
+          <p>Thorough mapping of applications, VMs, networks, and data flows to understand the current landscape.</p>
+        </article>
+        <article class="card">
+          <h3>Gap Analysis</h3>
+          <p>Detailed comparison of current on-premises capabilities versus cloud capabilities to identify opportunities.</p>
+        </article>
+        <article class="card">
+          <h3>TCO/ROI Modeling</h3>
+          <p>Comprehensive cost-benefit projections to support informed decision-making and investment planning.</p>
+        </article>
+        <article class="card">
+          <h3>Workload Prioritization</h3>
+          <p>Strategic classification of workloads based on criticality and complexity to guide migration planning.</p>
+        </article>
+      </div>
+    </section>
 
-  <!-- Landing Zone Architecture -->
-  <section id="landing" class="reveal">
-    <h2>Landing Zone Architecture</h2>
-    <p class="lead">Create a secure, scalable foundation for your cloud journey with enterprise-grade architecture patterns.</p>
-    <div class="card-grid">
-      <article class="card">
-        <h3>Account/Subscription Structure</h3>
-        <p>Clear separation of Dev/Test/Prod environments with dedicated management groups and subscription hierarchies.</p>
-      </article>
-      <article class="card">
-        <h3>Identity & Access</h3>
-        <p>Comprehensive Azure AD integration with IAM roles, mandatory MFA, and Privileged Identity Management (PIM).</p>
-      </article>
-      <article class="card">
-        <h3>Networking Baseline</h3>
-        <p>Enterprise-grade networking with Hub-and-Spoke topology, Virtual WAN, and Private Link for secure connectivity.</p>
-      </article>
-      <article class="card">
-        <h3>Security & Compliance</h3>
-        <p>Policy as Code implementation with automated guardrails and continuous compliance monitoring.</p>
-      </article>
-      <article class="card">
-        <h3>Automation</h3>
-        <p>Infrastructure as Code using Terraform/Bicep/CloudFormation with automated CI/CD pipelines for consistent deployments.</p>
-      </article>
-    </div>
-  </section>
+    <!-- Landing Zone Architecture -->
+    <section id="landing" class="reveal">
+      <h2>Landing Zone Architecture</h2>
+      <p class="lead">Create a secure, scalable foundation for your cloud journey with enterprise-grade architecture patterns.</p>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Account/Subscription Structure</h3>
+          <p>Clear separation of Dev/Test/Prod environments with dedicated management groups and subscription hierarchies.</p>
+        </article>
+        <article class="card">
+          <h3>Identity & Access</h3>
+          <p>Comprehensive Azure AD integration with IAM roles, mandatory MFA, and Privileged Identity Management (PIM).</p>
+        </article>
+        <article class="card">
+          <h3>Networking Baseline</h3>
+          <p>Enterprise-grade networking with Hub-and-Spoke topology, Virtual WAN, and Private Link for secure connectivity.</p>
+        </article>
+        <article class="card">
+          <h3>Security & Compliance</h3>
+          <p>Policy as Code implementation with automated guardrails and continuous compliance monitoring.</p>
+        </article>
+        <article class="card">
+          <h3>Automation</h3>
+          <p>Infrastructure as Code using Terraform/Bicep/CloudFormation with automated CI/CD pipelines for consistent deployments.</p>
+        </article>
+      </div>
+    </section>
 
-  <!-- Network Topology & Connectivity -->
-  <section id="network" class="reveal">
-    <h2>Network Topology & Connectivity</h2>
-    <div class="card-grid">
-      <article class="card">
-        <h3>Design Patterns</h3>
-        <p>Enterprise-grade patterns including Hub-and-Spoke, Virtual WAN, and Cloud-Native Firewalls (Palo Alto Cloud NGFW, Azure FW).</p>
-      </article>
-      <article class="card">
-        <h3>Routing</h3>
-        <p>Advanced routing with route tables, BGP, and strategic NVA placement for optimal traffic flow.</p>
-      </article>
-      <article class="card">
-        <h3>Hybrid Connectivity</h3>
-        <p>Seamless integration with VPN Gateway, ExpressRoute, and SD-WAN for reliable hybrid operations.</p>
-      </article>
-      <article class="card">
-        <h3>Secure Access</h3>
-        <p>Comprehensive security with Zscaler, Private Endpoints, and Bastion Hosts for protected access.</p>
-      </article>
-    </div>
-  </section>
+    <!-- Network Topology & Connectivity -->
+    <section id="network" class="reveal">
+      <h2>Network Topology & Connectivity</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Design Patterns</h3>
+          <p>Enterprise-grade patterns including Hub-and-Spoke, Virtual WAN, and Cloud-Native Firewalls (Palo Alto Cloud NGFW, Azure FW).</p>
+        </article>
+        <article class="card">
+          <h3>Routing</h3>
+          <p>Advanced routing with route tables, BGP, and strategic NVA placement for optimal traffic flow.</p>
+        </article>
+        <article class="card">
+          <h3>Hybrid Connectivity</h3>
+          <p>Seamless integration with VPN Gateway, ExpressRoute, and SD-WAN for reliable hybrid operations.</p>
+        </article>
+        <article class="card">
+          <h3>Secure Access</h3>
+          <p>Comprehensive security with Zscaler, Private Endpoints, and Bastion Hosts for protected access.</p>
+        </article>
+      </div>
+    </section>
 
-  <!-- Security Architecture -->
-  <section id="security-arch" class="reveal">
-    <h2>Security Architecture</h2>
-    <p class="lead">Defense-in-Depth Approach: Multiple layers of security controls working together to protect your assets.</p>
-    <div class="card-grid">
-      <article class="card">
-        <h3>Perimeter</h3>
-        <p>Robust protection with NGFW, WAF, and DDoS Protection services.</p>
-      </article>
-      <article class="card">
-        <h3>Access Control</h3>
-        <p>Granular access management through RBAC, Conditional Access, and Privileged Identity Management.</p>
-      </article>
-      <article class="card">
-        <h3>Data Protection</h3>
-        <p>Comprehensive data security with encryption in transit & at rest, Key Vault, and tokenization.</p>
-      </article>
-      <article class="card">
-        <h3>Workload Protection</h3>
-        <p>Advanced security with Defender for Cloud, Sentinel, XDR, and CSPM/CIEM solutions.</p>
-      </article>
-      <article class="card">
-        <h3>DevSecOps</h3>
-        <p>Integrated security with image scanning, pipeline enforcement, and IaC security practices.</p>
-      </article>
-    </div>
-  </section>
+    <!-- Security Architecture -->
+    <section id="security-arch" class="reveal">
+      <h2>Security Architecture</h2>
+      <p class="lead">Defense-in-Depth Approach: Multiple layers of security controls working together to protect your assets.</p>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Perimeter</h3>
+          <p>Robust protection with NGFW, WAF, and DDoS Protection services.</p>
+        </article>
+        <article class="card">
+          <h3>Access Control</h3>
+          <p>Granular access management through RBAC, Conditional Access, and Privileged Identity Management.</p>
+        </article>
+        <article class="card">
+          <h3>Data Protection</h3>
+          <p>Comprehensive data security with encryption in transit & at rest, Key Vault, and tokenization.</p>
+        </article>
+        <article class="card">
+          <h3>Workload Protection</h3>
+          <p>Advanced security with Defender for Cloud, Sentinel, XDR, and CSPM/CIEM solutions.</p>
+        </article>
+        <article class="card">
+          <h3>DevSecOps</h3>
+          <p>Integrated security with image scanning, pipeline enforcement, and IaC security practices.</p>
+        </article>
+      </div>
+    </section>
 
-  <!-- Application Modernization -->
-  <section id="modernization" class="reveal">
-    <h2>Application Modernization</h2>
-    <div class="card-grid">
-      <article class="card">
-        <h3>App Patterns</h3>
-        <p>Modern application design with 12-factor apps, serverless architecture, and microservices patterns.</p>
-      </article>
-      <article class="card">
-        <h3>Containers</h3>
-        <p>Container orchestration using Azure Kubernetes Service (AKS), ECS, and GKE for scalable deployments.</p>
-      </article>
-      <article class="card">
-        <h3>DevOps Pipelines</h3>
-        <p>Automated CI/CD with GitHub Actions, Azure DevOps, and Jenkins for streamlined delivery.</p>
-      </article>
-      <article class="card">
-        <h3>API Management</h3>
-        <p>Secure and scalable API Gateway design with comprehensive security controls.</p>
-      </article>
-    </div>
-  </section>
+    <!-- Application Modernization -->
+    <section id="modernization" class="reveal">
+      <h2>Application Modernization</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>App Patterns</h3>
+          <p>Modern application design with 12-factor apps, serverless architecture, and microservices patterns.</p>
+        </article>
+        <article class="card">
+          <h3>Containers</h3>
+          <p>Container orchestration using Azure Kubernetes Service (AKS), ECS, and GKE for scalable deployments.</p>
+        </article>
+        <article class="card">
+          <h3>DevOps Pipelines</h3>
+          <p>Automated CI/CD with GitHub Actions, Azure DevOps, and Jenkins for streamlined delivery.</p>
+        </article>
+        <article class="card">
+          <h3>API Management</h3>
+          <p>Secure and scalable API Gateway design with comprehensive security controls.</p>
+        </article>
+      </div>
+    </section>
 
-  <!-- 9. Next steps -->
-  <section id="steps" class="reveal">
-    <h2>Next Steps</h2>
-    <div class="timeline">
-      <div class="timeline-step"><h4>Board Approval</h4><p>Let <b>Qumodity</b> assist in securing executive endorsement of the target zero‑trust end state. We provide the strategic direction, business case, and technical due diligence. World class architects and engineers provide the expertise to guide you through the transition.</p></div>
-      <div class="timeline-step"><h4>Pilot Launch</h4><p>We provide holistic project support, including architecture, design, and implementation. We deploy ZIA, ZPA, and Cloud NGFW in a non‑production hub to validate the strategy.</p></div>
-      <div class="timeline-step"><h4>Tooling & Training</h4><p>We provide in house professional services to stand up policy‑as‑code pipelines and upskill the platform team. Let us take care of the security policy management, process, and documentation for your entire organization.</p></div>
-      <div class="timeline-step"><h4>Phased Rollout</h4><p>Our solutions work because we collaborate with the business. Migrate either user traffic (risk) or workload traffic (cost) first based on your risk appetite, then iterate. We use industry standard tools and processes to ensure a smooth transition.</p></div>
-      <div class="timeline-step"><h4>Operational Excellence</h4><p><b>Qumodity</b> takes care of the day‑to‑day operations of your security platform. We manage the firewalls, the Zscaler Cloud Connectors, and the Azure Virtual WAN. You focus on your business while we find the right people to support you through professional services or FTE augmentation.</p></div>
-      <div class="timeline-step"><h4>Next Steps</h4><p>Let's talk. We're ready to help you modernize your perimeter in Azure.</p></div>
-    </div>
-  </section>
+    <!-- 9. Next steps -->
+    <section id="steps" class="reveal">
+      <h2>Next Steps</h2>
+      <div class="timeline">
+        <div class="timeline-step"><h4>Board Approval</h4><p>Let <b>Qumodity</b> assist in securing executive endorsement of the target zero‑trust end state. We provide the strategic direction, business case, and technical due diligence. World class architects and engineers provide the expertise to guide you through the transition.</p></div>
+        <div class="timeline-step"><h4>Pilot Launch</h4><p>We provide holistic project support, including architecture, design, and implementation. We deploy ZIA, ZPA, and Cloud NGFW in a non‑production hub to validate the strategy.</p></div>
+        <div class="timeline-step"><h4>Tooling & Training</h4><p>We provide in house professional services to stand up policy‑as‑code pipelines and upskill the platform team. Let us take care of the security policy management, process, and documentation for your entire organization.</p></div>
+        <div class="timeline-step"><h4>Phased Rollout</h4><p>Our solutions work because we collaborate with the business. Migrate either user traffic (risk) or workload traffic (cost) first based on your risk appetite, then iterate. We use industry standard tools and processes to ensure a smooth transition.</p></div>
+        <div class="timeline-step"><h4>Operational Excellence</h4><p><b>Qumodity</b> takes care of the day‑to‑day operations of your security platform. We manage the firewalls, the Zscaler Cloud Connectors, and the Azure Virtual WAN. You focus on your business while we find the right people to support you through professional services or FTE augmentation.</p></div>
+        <div class="timeline-step"><h4>Next Steps</h4><p>Let's talk. We're ready to help you modernize your perimeter in Azure.</p></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Technical Content -->
+  <div class="content-section" id="technical-content" style="display: none;">
+    <!-- Easy to Understand, Easy to Implement -->
+    <section id="strategy" class="reveal">
+      <h2>Technical Implementation Guide</h2>
+      <p class="lead">Comprehensive technical documentation and implementation details for Azure security architecture.</p>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Architecture Patterns</h3>
+          <p>Detailed technical patterns for implementing zero-trust security in Azure.</p>
+        </article>
+        <article class="card">
+          <h3>Infrastructure as Code</h3>
+          <p>Terraform/Bicep templates and deployment guides for secure landing zones.</p>
+        </article>
+        <article class="card">
+          <h3>Security Controls</h3>
+          <p>Technical implementation of security controls and compliance requirements.</p>
+        </article>
+        <article class="card">
+          <h3>Network Architecture</h3>
+          <p>Detailed network topology and connectivity patterns for Azure environments.</p>
+        </article>
+        <article class="card">
+          <h3>Monitoring & Logging</h3>
+          <p>Technical setup for security monitoring, logging, and alerting in Azure.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Cloud Readiness & Assessment -->
+    <section id="readiness" class="reveal">
+      <h2>Technical Assessment</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Infrastructure Analysis</h3>
+          <p>Technical assessment of current infrastructure and migration requirements.</p>
+        </article>
+        <article class="card">
+          <h3>Security Baseline</h3>
+          <p>Technical evaluation of current security controls and gaps.</p>
+        </article>
+        <article class="card">
+          <h3>Performance Metrics</h3>
+          <p>Technical performance analysis and optimization recommendations.</p>
+        </article>
+        <article class="card">
+          <h3>Cost Analysis</h3>
+          <p>Detailed technical cost breakdown and optimization strategies.</p>
+        </article>
+        <article class="card">
+          <h3>Migration Planning</h3>
+          <p>Technical migration strategy and implementation roadmap.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Landing Zone Architecture -->
+    <section id="landing" class="reveal">
+      <h2>Technical Landing Zone</h2>
+      <p class="lead">Detailed technical implementation of secure landing zones in Azure.</p>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Resource Organization</h3>
+          <p>Technical implementation of management groups and subscription structure.</p>
+        </article>
+        <article class="card">
+          <h3>Identity Architecture</h3>
+          <p>Technical setup of Azure AD and identity management solutions.</p>
+        </article>
+        <article class="card">
+          <h3>Network Implementation</h3>
+          <p>Technical configuration of hub-and-spoke and virtual WAN architecture.</p>
+        </article>
+        <article class="card">
+          <h3>Security Implementation</h3>
+          <p>Technical deployment of security controls and monitoring solutions.</p>
+        </article>
+        <article class="card">
+          <h3>Automation Framework</h3>
+          <p>Technical implementation of IaC and automation pipelines.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Network Topology & Connectivity -->
+    <section id="network" class="reveal">
+      <h2>Technical Network Design</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Network Architecture</h3>
+          <p>Technical implementation of network security and connectivity patterns.</p>
+        </article>
+        <article class="card">
+          <h3>Routing Configuration</h3>
+          <p>Technical setup of routing and network security groups.</p>
+        </article>
+        <article class="card">
+          <h3>Hybrid Connectivity</h3>
+          <p>Technical implementation of VPN and ExpressRoute solutions.</p>
+        </article>
+        <article class="card">
+          <h3>Security Implementation</h3>
+          <p>Technical deployment of network security controls and monitoring.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Security Architecture -->
+    <section id="security-arch" class="reveal">
+      <h2>Technical Security Implementation</h2>
+      <p class="lead">Detailed technical implementation of security controls and monitoring.</p>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Perimeter Security</h3>
+          <p>Technical implementation of network security controls.</p>
+        </article>
+        <article class="card">
+          <h3>Access Management</h3>
+          <p>Technical setup of RBAC and access control solutions.</p>
+        </article>
+        <article class="card">
+          <h3>Data Protection</h3>
+          <p>Technical implementation of encryption and data security controls.</p>
+        </article>
+        <article class="card">
+          <h3>Security Monitoring</h3>
+          <p>Technical setup of security monitoring and alerting solutions.</p>
+        </article>
+        <article class="card">
+          <h3>DevSecOps Implementation</h3>
+          <p>Technical integration of security into development pipelines.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Application Modernization -->
+    <section id="modernization" class="reveal">
+      <h2>Technical Modernization</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Application Architecture</h3>
+          <p>Technical implementation of modern application patterns.</p>
+        </article>
+        <article class="card">
+          <h3>Container Implementation</h3>
+          <p>Technical setup of container orchestration and management.</p>
+        </article>
+        <article class="card">
+          <h3>Pipeline Implementation</h3>
+          <p>Technical setup of CI/CD pipelines and automation.</p>
+        </article>
+        <article class="card">
+          <h3>API Implementation</h3>
+          <p>Technical setup of API management and security controls.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Next Steps -->
+    <section id="steps" class="reveal">
+      <h2>Technical Next Steps</h2>
+      <div class="timeline">
+        <div class="timeline-step"><h4>Technical Assessment</h4><p>Let <b>Qumodity</b> perform a detailed technical assessment of your current environment. We provide comprehensive technical documentation and implementation guides.</p></div>
+        <div class="timeline-step"><h4>Technical Pilot</h4><p>We provide technical implementation support, including architecture, design, and deployment. We deploy security controls in a non-production environment to validate the technical approach.</p></div>
+        <div class="timeline-step"><h4>Technical Setup</h4><p>We provide technical implementation services to set up security controls and monitoring solutions. We handle the technical implementation of security controls and monitoring solutions.</p></div>
+        <div class="timeline-step"><h4>Technical Migration</h4><p>Our technical solutions work because we implement them correctly. Migrate either user traffic or workload traffic first based on technical requirements, then iterate.</p></div>
+        <div class="timeline-step"><h4>Technical Operations</h4><p><b>Qumodity</b> provides technical support for your security platform. We manage the technical implementation of security controls and monitoring solutions.</p></div>
+        <div class="timeline-step"><h4>Next Steps</h4><p>Let's talk. We're ready to help you implement your security controls in Azure.</p></div>
+      </div>
+    </section>
+  </div>
 </main>
 
 <footer>
@@ -202,6 +382,73 @@
   const io = new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}}),{threshold:.15});
   els.forEach(el=>io.observe(el));
 })();
+
+// Layout switching functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const layoutBtns = document.querySelectorAll('.layout-btn');
+  const businessContent = document.getElementById('business-content');
+  const technicalContent = document.getElementById('technical-content');
+  
+  // Navigation text mapping for different views
+  const navTextMap = {
+    business: {
+      'strategy': 'End-to-End Strategy',
+      'readiness': 'Cloud Readiness',
+      'landing': 'Landing Zone',
+      'network': 'Network',
+      'security-arch': 'Security',
+      'modernization': 'Modernization',
+      'steps': 'Next Steps'
+    },
+    technical: {
+      'strategy': 'Implementation Guide',
+      'readiness': 'Technical Assessment',
+      'landing': 'Technical Landing',
+      'network': 'Network Design',
+      'security-arch': 'Security Controls',
+      'modernization': 'Technical Modernization',
+      'steps': 'Technical Next Steps'
+    }
+  };
+
+  // Function to update navigation text
+  function updateNavText(layout) {
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    navLinks.forEach(link => {
+      const sectionId = link.getAttribute('href').substring(1);
+      if (navTextMap[layout][sectionId]) {
+        link.textContent = navTextMap[layout][sectionId];
+      }
+    });
+  }
+
+  layoutBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      // Update button states
+      layoutBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+
+      // Get the selected layout
+      const selectedLayout = this.dataset.layout;
+
+      // Update navigation text
+      updateNavText(selectedLayout);
+
+      // Fade out current content
+      const currentContent = businessContent.style.display !== 'none' ? businessContent : technicalContent;
+      const newContent = selectedLayout === 'business' ? businessContent : technicalContent;
+
+      currentContent.style.opacity = '0';
+      setTimeout(() => {
+        currentContent.style.display = 'none';
+        newContent.style.display = 'block';
+        // Trigger reflow
+        newContent.offsetHeight;
+        newContent.style.opacity = '1';
+      }, 300);
+    });
+  });
+});
 </script>
 </body>
 </html>

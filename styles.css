@@ -292,4 +292,75 @@ footer {
   padding: 3rem 1rem 4rem; 
   font-size: .8rem; 
   opacity: .6; 
+}
+
+/* Layout Switcher Styles */
+.layout-switcher {
+  display: flex;
+  gap: 8px;
+  margin: 0 20px;
+  height: 25px;
+  align-items: center;
+}
+
+.layout-btn {
+  padding: 4px 12px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.layout-btn:hover {
+  background: rgba(10, 132, 255, 0.1);
+}
+
+.layout-btn.active {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* Content Section Styles */
+.content-section {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+/* Card Grid Animation */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline Animation */
+.timeline-step {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.timeline-step:hover {
+  transform: translateX(10px);
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 } 
