@@ -279,26 +279,28 @@ section p.lead {
   background: var(--accent);
 }
 
-.timeline-step {
-  position: relative; 
-  margin-bottom: 2rem;
+.timeline-step{
+  position:relative;
+  /* push the text far enough right so the dot never overlaps it */
+  padding-left:1.5rem;   /* tweak to taste */
+  margin-bottom:2rem;
 }
 
-.timeline-step::before {
-  content: ""; 
-  position: absolute; 
-  left: -4px; 
-  top: .2rem; 
-  width: 12px; 
-  height: 12px;
-  border-radius: 50%; 
-  background: var(--accent);
+.timeline-step::before{
+  content:"";
+  position:absolute;
+  left:0;                /* now aligns with the new padding */
+  top:.2rem;
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:var(--accent);
 }
 
-.timeline-step h4 { 
-  margin: 0 0 .3rem; 
-  font-size: 1.1rem; 
-  color: var(--accent); 
+.timeline-step h4{
+  margin:0 0 .3rem;
+  font-size:1.1rem;
+  color:var(--accent);
 }
 
 /* --- Fade-in reveal --- */
