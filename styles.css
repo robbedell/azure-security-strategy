@@ -281,7 +281,7 @@ section p.lead {
 
 .timeline-step{
   position:relative;
-  /* push the text far enough right so the dot never overlaps it */
+  /* push the text far enough right so the dot never overlaps it - fixes padding */
   padding-left:1.5rem;   /* tweak to taste */
   margin-bottom:2rem;
 }
@@ -289,7 +289,7 @@ section p.lead {
 .timeline-step::before{
   content:"";
   position:absolute;
-  left:0;                /* now aligns with the new padding */
+  left:0;                /* now aligns with the new padding - fixes padding */
   top:.2rem;
   width:12px;
   height:12px;
