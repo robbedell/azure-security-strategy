@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Configuration for SOLUTIONS DROPDOWN MENU (Static External Links)
   const solutionsLinksMap = {
-    'Azure IaaS to Cloud Native Strategy': 'azure_strat.html',
+    'Azure IaaS to Cloud Native Strategy': 'strategies/azure_strat.html',
     'Zero Trust Implementation': 'https://example.com/zero-trust-implementation',
     'Managed SIEM/SOAR': 'https://example.com/managed-siem-soar',
     'Compliance Advisory': 'https://example.com/compliance-advisory'
